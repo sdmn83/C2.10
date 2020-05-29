@@ -5,6 +5,11 @@ const parrot = document.getElementById('parrots')
 const dog = document.getElementById('dogs')
 const res = document.getElementById('res')
 
+function show () {
+    res.style.display = '';
+}
+
+
 cat.onclick = function voteCat() {
     fetch(url + "cats", {method: 'post'});
     show ();
